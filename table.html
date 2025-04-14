@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+
+:root{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: rgb(44, 44, 43);
+}
+
+body{
+    margin: 20px 10px;
+    background: linear-gradient(135deg, #2683fe 0%, #ebedee 100%);
+}
+
+.website{
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.description {
+    display: flex;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    color: red;
+    align-items: center;
+    font-weight: 800;
+    background-color: #a0e6ea;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.dt1{
+    color: black;
+}
+
+.morningSession{
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border: 2px solid #ccc;
+    text-align: center;
+  }
+  
+
+.tbspacing{
+    padding: 20px;
+    border: none;
+}
+
+thead th{
+    padding: 4px 15px;
+}
+
+thead{
+    background: linear-gradient(to right, #b795db, #e6f7ff);
+}
+.tbspacingS{
+    transform: rotateZ(90deg);
+    border: none;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(44, 74, 78);
+    font-weight: 700;
+    font-size: 15px;
+
+    
+}
+
+.line{
+    position: relative;
+    font-size: 8px;
+}
+
+.verticalWeek{
+    transform: rotateZ(-90deg);
+    font-size: 12px;
+}
+
+tbody{
+    font-size: 9px;
+    
+}
+
+tbody tr:nth-child(1) , tbody tr:nth-child(3) , tbody tr:nth-child(5){
+    background-color: #f9f9f9;
+  }
+  
+tbody tr:hover {
+    background-color: #e6f7ff;
+  }
+
+tbody tr:first-of-type{
+    background-color: #c7d7de;
+}
+
+
+
+
+.numt{
+    font-size: 14px;
+}
+
+tbody{
+    background: linear-gradient(to right, #ffffff, #f7f7f7);
+    border-color:rgb(0, 47, 157);
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.classIF{
+    background-color: rgb(228 255 250);
+}
+
+.alert{
+    margin-top: 20px;
+    width: 200px;
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    border-bottom-right-radius: 14px;
+    padding: 10px;
+    background-color: yellow;
+}
+
+@media(max-width:768px){
+    body{
+        margin: 3px 0px;
+    }
+
+    .description{
+        max-width: 300px;
+        font-size: 9px;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="website">
+        <a class="back" href="index.html"><button type="submit">🔙</button></a>
+        <div class="desciptionWrapper">
+            <div class="description">
+                <span>
+                    Чадвали электронии дарси
+                </span>
+                <span>
+                    Факултети ТРБИ барои нимсолаи дуюми соли тахсили 
+                </span>
+                <span class="dt1">
+                    Басти 1
+                </span>
+            </div>
+        </div>
+        <table class="morningSession" border="1px">
+            <thead>
+                <th>
+                    Рамзи<br>ихтисос
+                </th>
+                <th>
+                    1-08 01 0101-01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-08 01 0101-01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-08 01 0101-01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-02 05 05
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -40010102
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-40 01 02-04
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -45010302
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-310304
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -40010102
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -40 01 02-04
+                </th>
+            </thead>
+            <thead>
+                <th class="classIF">
+                    Ихтисос
+                </th>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS" colspan="1">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика-<br>математика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    СА
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    НТИ
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    ША
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    СА
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    НТИ
+                </th>
+            </thead>
+            <thead>
+                <th>
+                    Гуруххо
+                </th>
+                <th>
+                    101(р)
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    102
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    103
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    104
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    105
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    106
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    107
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    401
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    402
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    403
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Душанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Сешанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Англис язык(прак)</td><td class="tbspacing">1</td><td>Хукук(лек)</td><td class="tbspacing">14</td><td>Хукук(лек)</td><td class="tbspacing">15</td><td>Сотсиология(лек)</td><td class="tbspacing">3</td><td>Таъ муос точик(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Англис язык(срсп)</td><td class="tbspacing">1</td><td>Алгеб ва геом(лек)</td><td class="tbspacing">14</td><td>Алгеб ва геом(лек)</td><td class="tbspacing">15</td><td>Сотсиология(сем)</td><td class="tbspacing">3</td><td>Таъ муос точик(сем)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Педагогика(срсп)</td><td class="tbspacing">1</td><td>Заб англиси(ам)</td><td class="tbspacing">14</td><td>Асос информатика(кмро)</td><td class="tbspacing">15</td><td>Чад электрони(ам)</td><td class="tbspacing">3</td><td>Физика(кмро)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Забони англиси(кмро)</td><td class="tbspacing">15</td><td>Чад электрони(кмро)</td><td class="tbspacing">3</td><td>Математикаи оли(кмро)</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(кмро)</td><td class="tbspacing">15</td><td>Алгеб ва геом(кмро)</td><td class="tbspacing">3</td><td>Хукук(кмро)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Чоршанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Панчшанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Чумьа</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Шанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td></tr>  
+            </tbody>
+        </table>
+        <div class="desciptionWrapper">
+            <div class="description">
+                <span>
+                    Чадвали электронии дарси
+                </span>
+                <span>
+                    Факултети ТРБИ барои нимсолаи дуюми соли тахсили 
+                </span>
+                <span class="dt1">
+                    Басти 2
+                </span>
+            </div>
+        </div>
+        <table class="morningSession" border="1px">
+            <thead>
+                <th>
+                    Рамзи<br>ихтисос
+                </th>
+                <th>
+                    1-08 01 0101-01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-08 01 0101-01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-08 01 0101-01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-02 05 05
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -40010102
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1-40 01 02-04
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -08 01 01 01 -01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -08 01 01 01 -01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -08 01 01 01 -01
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -40 01 02-02
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -40 01 02-04
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    1 -45010302
+                </th>
+            </thead>
+            <thead>
+                <th class="classIF">
+                    Ихтисос
+                </th>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS" colspan="1">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика-<br>математика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    СА
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    НТИ
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    Информатика
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    СА
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    НТИ
+                </th>
+                <td class="tbspacingS">
+                    АУД
+                </td>
+                <th class="classIF">
+                    ША
+                </th>
+            </thead>
+            <thead>
+                <th>
+                    Гуруххо
+                </th>
+                <th>
+                    201(р)
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    202
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    203
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    204
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    205
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    206
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    301
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    302
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    303
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    304
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    305
+                </th>
+                <td class="tbspacing">
+
+                </td>
+                <th>
+                    306
+                </th>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Душанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Сешанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Англис язык(прак)</td><td class="tbspacing">1</td><td>Хукук(лек)</td><td class="tbspacing">14</td><td>Хукук(лек)</td><td class="tbspacing">15</td><td>Сотсиология(лек)</td><td class="tbspacing">3</td><td>Таъ муос точик(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Англис язык(срсп)</td><td class="tbspacing">1</td><td>Алгеб ва геом(лек)</td><td class="tbspacing">14</td><td>Алгеб ва геом(лек)</td><td class="tbspacing">15</td><td>Сотсиология(сем)</td><td class="tbspacing">3</td><td>Таъ муос точик(сем)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Педагогика(срсп)</td><td class="tbspacing">1</td><td>Заб англиси(ам)</td><td class="tbspacing">14</td><td>Асос информатика(кмро)</td><td class="tbspacing">15</td><td>Чад электрони(ам)</td><td class="tbspacing">3</td><td>Физика(кмро)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Забони англиси(кмро)</td><td class="tbspacing">15</td><td>Чад электрони(кмро)</td><td class="tbspacing">3</td><td>Математикаи оли(кмро)</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(кмро)</td><td class="tbspacing">15</td><td>Алгеб ва геом(кмро)</td><td class="tbspacing">3</td><td>Хукук(кмро)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Чоршанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Панчшанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Чумьа</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>  
+            </tbody>
+            <tbody>
+                <tr>
+                    <th rowspan="6">
+                      <div class="verticalWeek">Шанбе</div>
+                    </th>
+                    
+                  </tr>
+                  <tr><td class="line"><span class="numt">1</span>   - Основы инф(лек)</td><td class="tbspacing">1</td><td>Педагогика(сем)</td><td class="tbspacing">14</td><td>Забони англиси(ам)</td><td class="tbspacing">15</td><td>Фархангшиноси(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">2</span>   - Алгеб и геом(лек)</td><td class="tbspacing">1</td><td>Педагогика (кмро)</td><td class="tbspacing">14</td><td>Асос информ(ам/км)</td><td class="tbspacing">15</td><td>Чад электрони(лек)</td><td class="tbspacing">3</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Физика(лек)</td><td class="tbspacing">8</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">3</span>   - Алгеб и геом(прак)</td><td class="tbspacing">1</td><td>Асос.информ(ам/км)</td><td class="tbspacing">14</td><td>Педагогика(сем)</td><td class="tbspacing">15</td><td>Фархангшиноси(сем)</td><td class="tbspacing">3</td><td>Физика(ам)</td><td class="tbspacing">8</td><td>Таъ муос точик(кмро)</td><td class="tbspacing">9</td><td>Сотсиология(лек)</td><td class="tbspacing">2</td><td>Киб ва чом.иттил(ам)</td><td class="tbspacing">4</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">4</span>   - Русский язык(прак)</td><td class="tbspacing">1</td><td>Алгеб ва геом (ам)</td><td class="tbspacing">14</td><td>Педагогика(кмро)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Таъ муос Точик</td><td class="tbspacing">8</td><td>Физика(ам)</td><td class="tbspacing">9</td><td>Сотсиология(сем)</td><td class="tbspacing">2</td><td>Архитектураи компютери(ам)</td><td class="tbspacing">4</td><td>Киб ва чомеаи иттилоот(кмро)</td><td class="tbspacing">11</td><td>Киб ва чомеаи иттилоот(ам)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>
+                  <tr><td class="line"><span class="numt">5</span>   - Русский язык(срсп)</td><td class="tbspacing">1</td><td>Забони англиси(кмро)</td><td class="tbspacing">14</td><td>Алгеб ва геом(ам)</td><td class="tbspacing">15</td><td>Усул хим иттилоот(лек)</td><td class="tbspacing">3</td><td>Граф компютери(лек)</td><td class="tbspacing">8</td><td>Граф компютери(кмро)</td><td class="tbspacing">9</td><td>Физика(ам)</td><td class="tbspacing">2</td><td>Архитектураи компютери(кмро)</td><td class="tbspacing">4</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Сис алокаи фаври(кмро)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td><td class="tbspacing">11</td><td>Лоиха ва Access(лек)</td></tr>  
+            </tbody>
+        </table>
+        <table class="alert">
+            <tr>
+                <th rowspan="2">Соатҳо</th>
+                <th colspan="2">Басти якум</th>
+                <th colspan="2">Басти дуюм</th>
+            </tr>
+            <tr>
+                <th>Зангӣ даромад</th>
+                <th>Зангӣ баромад</th>
+                <th>Зангӣ даромад</th>
+                <th>Зангӣ баромад</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>8:00</td>
+                <td>8:50</td>
+                <td>13:00</td>
+                <td>13:50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>9:00</td>
+                <td>9:50</td>
+                <td>14:00</td>
+                <td>14:50</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>10:00</td>
+                <td>10:50</td>
+                <td>15:00</td>
+                <td>15:50</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>11:00</td>
+                <td>11:50</td>
+                <td>16:00</td>
+                <td>16:50</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>12:00</td>
+                <td>12:50</td>
+                <td>17:00</td>
+                <td>17:50</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
